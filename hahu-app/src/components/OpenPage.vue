@@ -4,10 +4,12 @@
             <h1 class="text-center pt-2 pt-lg-4">Á.L.B. Ingatlanügynöség</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 text-center">
-                    <a class="btn btn-primary" href="#">Nézze meg kínálatunkat!</a>
+                    <!-- <a class="btn btn-primary" href="#">Nézze meg kínálatunkat!</a> -->
+                   <router-link to="/offers" class="btn btn-primary">Nézze meg kínálatunkat!</router-link>
                 </div>
                 <div class="col-12 col-sm-6 text-center">
-                    <a class="btn btn-primary" href="#">Hirdessen nálunk!</a>
+                    <!-- <a class="btn btn-primary" href="#">Hirdessen nálunk!</a> -->
+                    <router-link to="/" class="btn btn-primary">Hirdessen nálunk!</router-link>
                 </div>
             </div>
         </div>

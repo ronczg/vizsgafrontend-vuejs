@@ -14,8 +14,14 @@ const router = createRouter({
         {path: '/offers', component: IngatlanKinalat}
     ]
 })
+import VueGoodTablePlugin from 'vue-good-table-next';
+
+// import the styles
+import 'vue-good-table-next/dist/vue-good-table-next.css'
+
 const app = createApp(App)
 app.use(router)
+app.use(VueGoodTablePlugin);
 import 'bootstrap/dist/js/bootstrap'
 
 app.mount('#app')
