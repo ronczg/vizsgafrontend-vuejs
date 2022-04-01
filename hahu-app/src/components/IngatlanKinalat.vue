@@ -46,7 +46,7 @@ export default {
   },
   created(){
       Axios
-      .get("/api/ingatlan")
+      .get("http://localhost:5000/api/ingatlan")
       .then(response => {
           this.rows = response.data;
       })
