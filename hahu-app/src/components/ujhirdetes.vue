@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="alert alert-danger alert-dismissible" role="alert">
-                    <strong>Hiba szövege</strong>
+                    <strong>{{error}}</strong>
                     <button type="button" class="btn-close"></button>
                 </div>
             </div>
@@ -66,8 +66,11 @@ export default {
     methods: {
         save(){
             Axios.post('http://localhost:5000/api/ujingatlan', this.ujHirdetes)
-            .then(response => console.log(response.data))
-            .catch(err =>console.log(err))
+            .then(response => {
+                console.log(response.data)
+                this.$router.push('/offers')
+                })
+            .catch(err => this.error = err)
         }
     },
     created(){
