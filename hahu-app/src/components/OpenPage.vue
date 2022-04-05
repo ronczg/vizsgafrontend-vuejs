@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-12 col-sm-6 text-center">
                     <!-- <a class="btn btn-primary" href="#">Hirdessen nálunk!</a> -->
-                    <router-link to="/" class="btn btn-primary">Hirdessen nálunk!</router-link>
+                    <router-link to="/newad" class="btn btn-primary">Hirdessen nálunk!</router-link>
                 </div>
             </div>
         </div>
